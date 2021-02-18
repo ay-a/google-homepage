@@ -3,12 +3,34 @@
 body {
     background-color:rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    position: static;
+    display: block;
+    position: absolute;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
-#search-bar {
-    height: 10px;
-    border-color: rgb(71, 71, 71);
+a{
+    font-style: normal;
+    text-decoration: none;
+    color: #2c2c2c;
 }
 
+#upper-nav{
+    display: grid;
+    grid-template-columns: auto 50px 50px 50px;
+    grid-column-gap: 3px;
+    justify-items: right;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+#icon{
+    border-radius: 50%;
+}
+
+#magnifying-glass{
+    width: 20px;
+    height:20px;
+}
