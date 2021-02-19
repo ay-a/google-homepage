@@ -1,11 +1,10 @@
 /*CSS for google-homepage project*/
 
 body {
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(250, 246, 245);
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     position: absolute;
-    align-items: center;
     height: 100%;
     width: 100%;
 }
@@ -16,11 +15,16 @@ a{
     color: #2c2c2c;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
 #upper-nav{
     display: grid;
     grid-template-columns: auto 50px 50px 50px;
-    grid-column-gap: 3px;
+    grid-column-gap: 8px;
     justify-items: right;
+    align-items: center;
     text-align: center;
     padding: 10px 20px;
     font-size: 12px;
@@ -30,7 +34,105 @@ a{
     border-radius: 50%;
 }
 
+#main-contents{
+    position: relative;
+    margin: 0 auto; 
+    height: auto;
+    background-color: ;
+}
+
+#google-header{
+    padding: 100px 0px 20px 0px;
+    margin: 0 auto;
+    width: max-content;
+    height: max-content;
+}
+
+#search-area{
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+    height: auto;
+    background-color: ;
+    position: relative;
+}
+
+#search-bar{
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    border: 1px solid;
+    height: 36px;
+}
+
+#search-bar:hover{
+    box-shadow: 2px 2px 5px rgba(44, 43, 48, 0.3);
+}
+
+
+#search-form{
+    position: inherit;
+    width: 640px;
+    height: 20px;
+    padding-left: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+}
+
+#search-form:focus{
+    outline: none;
+}
+
 #magnifying-glass{
+    padding: 3px 10px 7px 8px;
     width: 20px;
     height:20px;
+    opacity: 0.7;
+}
+#google-button-group{
+    display: flex;
+    justify-content: center;
+    background: ;
+    height: 70px;
+    padding-top: 20px;
+    margin: 0 auto;
+
+}
+.google-button{
+    padding: 10px 40px;
+    margin: 0 5px;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: gray;
+    border: 1px solid;
+
+}
+
+.google-button:hover{
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0px 0px 7px rgba(44, 43, 48, 0.5);
+    cursor: pointer;
+}
+
+#dataprivacy-checkup{
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    height: 140px;
+}
+
+#dataprivacy-checkup img{
+    height: 70px;
+    padding: 0 10px;
+}
+
+#dataprivacy-checkup a{
+    color: rgb(107, 107, 107);
+    padding: 0 20px 0 0px;
 }
